@@ -525,8 +525,82 @@ main.faq {
   }
 
   .faq-content {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
     flex-basis: 45%;
   }
+
+  .faq h2 {
+    width: 100%;
+  }
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+  /*Desktop styles here*/
+
+  /* General Styles */
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  /* Header */
+  header {
+    padding: 15px 0;
+  }
+
+  /* Hero Area */
+  .hero-area h1 {
+    width: 70%;
+  }
+
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  /* Features */
+  .features h2 {
+    width: 88%;
+  }
+
+  features article {
+    flex-basis: 20%;
+  }
+
+  /* Reviews */
+  .reviews article {
+    width: 42%;
+  }
+
+
+  /* ==========================================================================
+   About Page
+   ========================================================================== */
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 90%;
+  }
+
+  /* ==========================================================================
+  FAQ Page
+  ========================================================================== */
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 45%;
+  }
+
 
   .faq h2 {
     width: 100%;
@@ -551,12 +625,6 @@ main.faq {
 
 
 
-
-
-}
-
-@media only screen and (min-width: 1200px) {
-  /*Desktop styles here*/
 }
 
 
